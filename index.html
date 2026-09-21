@@ -19,9 +19,10 @@
       line-height: 1.6; 
       max-width: 800px;
       /* Box Model: Margin atas 30px, Kiri/Kanan Auto (Tengah), Bawah 0 */
-      margin: 30px auto 0 auto; 
+      margin: 30px auto 0 auto;  /* Mengatur margin atas 30px, kiri/kanan auto (tengah), bawah 0 */
       padding: 0 15px;
     }
+    /* warna background , ketebalan garis , margin dan padding pada body
 
     /* 2. CONTAINER CARDS (Group Selector) */
     header, section {
@@ -128,18 +129,18 @@
       padding: 10px;
       text-align: left; 
       border-bottom: 1px solid #e0e0e0;
-    }
+    } /* Pseudo-class :nth-child untuk baris genap */
     
     th {
       background-color: #f8f9fa;
       color: #2c3e50;
-    }
+    } /* Pseudo-class :nth-child untuk baris genap */
 
     /* 6. FORMULIR DENGAN CSS GRID */
     form {
       display: grid;
       gap: 15px;
-    }
+    } 
 
     .form-row {
       display: grid;
@@ -153,14 +154,14 @@
       border: 1px solid #cccccc;
       border-radius: 5px;
       font-family: inherit;
-    }
+    } /* Pseudo-class :focus untuk Form */
 
     /* Pseudo-class :focus untuk Form */
     input:focus, textarea:focus {
       outline: none;
       border-color: #3498db;
       border: 2px solid #3498db;
-    }
+    } /* Pseudo-class :hover untuk Button */
 
     button {
       background-color: #3498db;
@@ -173,11 +174,11 @@
       transition: background 0.3s;
       justify-self: start;
       display: inline-block;
-    }
+    }  /* Pseudo-class :hover untuk Button */
 
     button:hover {
       background-color: red; 
-    }
+    } /* 6.1 Pseudo-class :hover untuk Button */
 
     /* 7. FOOTER (Penerapan Position Sticky & Z-Index) */
     footer {
@@ -190,8 +191,8 @@
       font-size: 0.9rem;
       padding: 15px;
       margin-top: 20px;
-      border-radius: 8px 8px 0 0;
-    }
+      border-radius: 8px 8px 0 0; /* Rounded top corners only */
+    } /* 7.1 Pseudo-class :hover untuk Footer */
 
     /* 8. MEDIA QUERY (Responsive untuk Tampilan HP) */
     @media (max-width: 600px) {
@@ -200,13 +201,13 @@
         grid-template-columns: 1fr; 
         justify-items: center;
         text-align: center;
-      }
+      } /* Mengubah posisi badge untuk tampilan mobile */
       .skills-grid {
         grid-template-columns: 1fr;
-      }
+      }/* Mengubah posisi badge untuk tampilan mobile */
       .form-row {
         grid-template-columns: 1fr; 
-      }
+      } /* Mengubah posisi badge untuk tampilan mobile */
     }
   </style>
 </head>
@@ -215,9 +216,9 @@
   <!-- HEADER -->
   <header>
     <span class="badge-status">Open to Work</span>
-    <img src="https://via.placeholder.com/150" alt="Foto Budi Santoso" width="120" height="120">
+    <img src="https://via.placeholder.com/150" alt="Foto Tomi Rizkiansyah" width="120" height="120">
     <div>
-      <h1>Budi Santoso</h1>
+      <h1>Tomi Rizkiansyah</h1>
       <h3>Web Developer & UI/UX Enthusiast</h3>
       <p>Email: <a href="mailto:budi@example.com">budi@example.com</a> | HP: 0812-3456-7890 | Lokasi: Jakarta</p>
       <p>LinkedIn: <a href="#" target="_blank">linkedin.com/in/budisantoso</a> | GitHub: <a href="#" target="_blank">github.com/budisantoso</a></p>
